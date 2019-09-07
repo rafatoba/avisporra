@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd 
+   http://www.liquibase.org/xml/ns/dbchangelog 
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+	<changeSet id="1" author="rafa">
+		<loadData tableName="team" file="liquibase/data/team.csv">
+		    <column header="Equipo" type="skip" />
+		    <column header="Grupo" name="competition_group" />
+		    <column header="Img" type="skip" />
+		    <column header="nombreExcel" type="skip" />
+		    <column header="nombreExcelen" name="name" />
+		    <column header="Id" type="skip" />
+		</loadData>
+	</changeSet>
+</databaseChangeLog>
