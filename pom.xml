@@ -8,5 +8,7 @@
   <description>Avisporra parent.</description>
   <modules>
     <module>avisporra-persistence</module>
-</modules>
+    <module>avisporra-data-access</module>
+    <module>avisporra-web</module>
+  </modules>
 </project>
