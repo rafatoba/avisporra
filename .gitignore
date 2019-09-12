@@ -50,6 +50,7 @@ nb-configuration.xml
 .DS_Store
 
 # Misc
+bin/
 *.swp
 release.properties
 pom.xml.releaseBackup
