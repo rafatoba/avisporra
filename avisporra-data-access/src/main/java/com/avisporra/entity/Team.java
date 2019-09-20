@@ -6,6 +6,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+
 @Entity
 public class Team {
     
@@ -28,10 +31,14 @@ public class Team {
     public void setName(String name) {
         this.name = name;
     }
-    
+    public String getCompetitionGroup() {
+        return competitionGroup;
+    }
+    public void setCompetitionGroup(String competitionGroup) {
+        this.competitionGroup = competitionGroup;
+    }
     @Override
     public String toString() {
-      
-        return super.toString();
+        return ReflectionToStringBuilder.toString(this, ToStringStyle.SHORT_PREFIX_STYLE);
     }
 }
