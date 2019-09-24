@@ -1,0 +1,6 @@
+Found problems with Docker under Windows 10 Pro. Decided to use Linux (Ubuntu distribution). Steps:
+Download Oracle VM Virtualbox (v6).
+Download Ubuntu last version (v18.04)
+Install Oracle VM VirtualBox.
+Install the Ubuntu on the Oracle VM VirtualBox (follow info under link: https://www.datasciencecentral.com/profiles/blogs/installation-and-running-ubuntu-virtual-box)
+Install Docker on Ubuntu (follow info under link: https://phoenixnap.com/kb/how-to-install-docker-on-ubuntu-18-04)
