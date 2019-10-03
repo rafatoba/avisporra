@@ -2,9 +2,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.avisporra</groupId>
     <artifactId>avisporra-persistence</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<name>Avisporra Persistence Module</name>
 	<description>Module which contains all DB related items</description>
 	<parent>
@@ -12,9 +10,7 @@
 		<artifactId>
 			avisporra
 		</artifactId>
-		<version>
-			0.0.1-SNAPSHOT
-		</version>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
 
@@ -32,15 +28,15 @@
 			<plugin>
 				<groupId>org.liquibase</groupId>
 				<artifactId>liquibase-maven-plugin</artifactId>
-				<version>3.0.5</version>
+				<version>3.6.1</version>
 				<configuration>
-					<propertyFile>src/main/resources/liquibase/liquibase.properties</propertyFile>
+					<propertyFile>src/main/resources/liquibase/liquibase-docker.properties</propertyFile>
 				</configuration>
 				<executions>
 					<execution>
 						<phase>process-resources</phase>
 						<goals>
-							<goal>update</goal>
+							<goal>updateSQL</goal>
 						</goals>
 					</execution>
 				</executions>
