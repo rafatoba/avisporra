@@ -1,4 +1,4 @@
 # avisporra
-Avisporra with all its submodules.
+Avisporra with all its submodules. Backend part.
 
 This repository is intended to hold all the different submodules that are part of the avisporra. Please navigate into each submodule to see what is it responsible for.
