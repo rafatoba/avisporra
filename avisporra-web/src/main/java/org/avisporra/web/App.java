@@ -8,6 +8,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 @SpringBootApplication
 @EnableJpaRepositories("com.avisporra.repository")
 @EntityScan("com.avisporra.entity")
+// Main application.
 public class App 
 {
     public static void main( String[] args )
